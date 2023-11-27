@@ -1,6 +1,9 @@
 .background {
   background-color: rgba(222, 222, 222, 1);
 }
+.text-red-600{
+  color: red;
+}
 .login {
   
   width: auto;
