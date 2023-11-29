@@ -11,7 +11,7 @@
                 <div class="row">
                   <h6 class="col m-0 font-weight-bold text-primary">DataTables Example</h6>
                   <div class="co">
-                    <a href="tambahbarang.html" class="btn btn-warning btn-icon-split"
+                    <a href="{{ route('admin.tambahbarang') }}" class="btn btn-warning btn-icon-split"
                       ><span class="icon text-white-50">
                         <i class="fas fa-plus"></i>
                       </span>
@@ -40,7 +40,7 @@
                         <td>30</td>
                         <td>
                           <div class="row">
-                            <a href="editbarang.html" class="col btn btn-success" style="margin: 0 10px">Edit</a>
+                            <a href="{{ route('admin.editbarang') }}" class="col btn btn-success" style="margin: 0 10px">Edit</a>
                             <a href="" class="col btn btn-danger" style="margin: 0 10px">Hapus</a>
                           </div>
                         </td>
