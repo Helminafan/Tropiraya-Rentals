@@ -18,6 +18,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+})->name('admin.dashboard');
+
+Route::get('/admin/barang', function () {
+    return view('admin.barang');
+})->name('admin.barang');
+
+Route::get('/admin/barangtambah', function () {
+    return view('admin.tambahbarang');
+})->name('admin.tambahbarang');
+
+Route::get('/admin/barangedit', function () {
+    return view('admin.editbarang');
+})->name('admin.editbarang');
 
 Route::get('/admin/barang', function () {
     return view('admin.barang');
@@ -30,7 +45,19 @@ Route::middleware([
 ])->group(function () {
     Route::get('user/home', function () {
         return view('dashboard');
+<<<<<<< HEAD
     })->name('user.dashboard');
+=======
+    })->name('dashboard');
+
+    Route::get('/barangtambah', function () {
+        return view('tambahbarang');
+    })->name('tambahbarang');
+    
+    Route::get('/barangedit', function () {
+        return view('editbarang');
+    })->name('editbarang');
+>>>>>>> origin/Nadia
 });
 
 Route::group(['prefix' => 'admin', 'middleware' => [
