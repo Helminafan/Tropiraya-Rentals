@@ -24,7 +24,7 @@
     <!-- Divider -->
 
     <!-- Nav Item - Charts -->
-    <li class="nav-item {{ request()->is('admin/barang') ? 'active' : '' }}">
+    <li class="nav-item {{ request()->is('admin/barang*') ? 'active' : '' }}">
       <a class="nav-link" href="{{route('admin.barang')}}">
         <i class="fa-solid fa-box"></i>
 

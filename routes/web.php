@@ -16,12 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('/auth/login');
+    return view('welcome');
 });
-
-Route::get('/admin/barang', function () {
-    return view('admin.barang');
-})->name('admin.barang');
 
 Route::middleware([
     'auth:sanctum',
@@ -41,7 +37,15 @@ Route::group(['prefix' => 'admin', 'middleware' => [
     Route::get('/dashboard', function () {
         return view('admin.dashboard');
     })->name('admin.dashboard');
-   
+    Route::get('/barangtambah', function () {
+        return view('admin.tambahbarang');
+    })->name('admin.tambahbarang');
+    Route::get('/barangedit', function () {
+        return view('admin.editbarang');
+    })->name('admin.editbarang');
+    Route::get('/barang', function () {
+        return view('admin.barang');
+    })->name('admin.barang');
 });
 
 Route::middleware([
