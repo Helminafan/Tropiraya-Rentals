@@ -66,8 +66,8 @@
                     <a href="#" class="nav-item nav-link">Alat</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="" class="btn btn-primary px-3 d-none d-lg-flex" id="login">Login</a>
-                <a href="" class="btn btn-light px-3 d-none d-lg-flex" id="register">Register</a>
+                <a href="{{route('login')}}" class="btn btn-primary px-3 d-none d-lg-flex" id="login">Login</a>
+                <a href="{{route('register')}}" class="btn btn-light px-3 d-none d-lg-flex" id="register">Register</a>
             </div>
         </nav>
     </header>
