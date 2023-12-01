@@ -9557,6 +9557,7 @@ a:focus {
     display: none;
 }
 .sidebar .sidebar-brand {
+    align-items: center;
     height: 4.375rem;
     text-decoration: none;
     font-size: 1rem;
@@ -9571,8 +9572,16 @@ a:focus {
     font-size: 2rem;
 }
 .sidebar .sidebar-brand .sidebar-brand-text {
-    display: none;
+    font-size: 1rem;
+
+    font-weight: bold;
+    color: black;
 }
+.sidebar .sidebar-brand .sidebar-brand-text span {
+    color: orange;
+    font-size: 2rem;
+}
+
 .sidebar hr.sidebar-divider {
     margin: 0 1rem 1rem;
 }

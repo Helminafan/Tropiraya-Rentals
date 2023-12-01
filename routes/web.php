@@ -47,6 +47,12 @@ Route::group(['prefix' => 'admin', 'middleware' => [
     Route::get('/barang', function () {
         return view('admin.barang');
     })->name('admin.barang');
+    Route::get('/peminjam', function () {
+        return view('admin.peminjam');
+    })->name('admin.peminjam');
+    Route::get('/riwayatpeminjaman', function () {
+        return view('admin.riwayatpeminjaman');
+    })->name('admin.riwayatpeminjaman');
 });
 
 Route::middleware([
