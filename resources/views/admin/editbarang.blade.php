@@ -10,7 +10,7 @@
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
               <div class="card-header py-3">
-                <h6 class=" col m-0 font-weight-bold text-primary">Tambah Barang Olahraga</h6>
+                <h6 class=" col m-0 font-weight-bold text-primary">Tambah Barang Rentals</h6>
               </div>
               <div class="card-body">
               <form id="validate" action="{{ route('admin.editbarang') }}" class="row g-3">
