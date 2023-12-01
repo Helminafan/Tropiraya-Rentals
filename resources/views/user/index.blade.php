@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="{{asset('user/img/favicon.ico')}}" rel="icon">
+    <link href="{{asset('landingPage/img/favicon.ico')}}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,14 +23,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Libraries Stylesheet -->
-    <link href="{{asset('user/lib/animate/animate.min.css')}}" rel="stylesheet">
-    <link href="{{asset('user/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{asset('landingPage/lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('landingPage/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{asset('user/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('landingPage/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{asset('user/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('landingPage/css/style.css')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -53,7 +53,7 @@
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
             <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
                 <div class="icon p-2 me-2">
-                    <img class="img-fluid" src="{{asset('user/img/icon-deal.png')}}" alt="Icon" style="width: 30px; height: 30px;">
+                    <img class="img-fluid" src="{{asset('landingPage/img/icon-deal.png')}}" alt="Icon" style="width: 30px; height: 30px;">
                 </div>
                 <h1 class="m-0 text-primary">TropiRaya Rentals</h1>
             </a>
@@ -84,10 +84,10 @@
             <div class="col-md-6 animated fadeIn">
                 <div class="owl-carousel header-carousel">
                     <div class="owl-carousel-item">
-                        <img class="img-fluid" src="{{asset('user/img/heroElement3.jpg')}}" alt="kebun raya">
+                        <img class="img-fluid" src="{{asset('landingPage/img/heroElement3.jpg')}}" alt="kebun raya">
                     </div>
                     <div class="owl-carousel-item">
-                        <img class="img-fluid" src="{{asset('user/img/heroElement2.jpg')}}" alt="kebun raya">
+                        <img class="img-fluid" src="{{asset('landingPage/img/heroElement2.jpg')}}" alt="kebun raya">
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@
                         <section class="cat-item d-block bg-light text-center rounded p-3" href="">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
-                                    <img class="img-fluid" src="{{asset('user/img/pagelines.svg')}}" alt="Icon">
+                                    <img class="img-fluid" src="{{asset('landingPage/img/pagelines.svg')}}" alt="Icon">
                                 </div>
                                 <h6>Pohon</h6>
                                 <span>Puluhan jenis tanaman</span>
@@ -123,7 +123,7 @@
                         <section class="cat-item d-block bg-light text-center rounded p-3" href="">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
-                                    <img class="img-fluid" src="{{asset('user/img/mountain-sun-solid.svg')}}" alt="Icon">
+                                    <img class="img-fluid" src="{{asset('landingPage/img/mountain-sun-solid.svg')}}" alt="Icon">
                                 </div>
                                 <h6>Spot</h6>
                                 <span class="desc">10 Spot Terbaik</span>
@@ -134,7 +134,7 @@
                         <section class="cat-item d-block bg-light text-center rounded p-3" href="">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
-                                    <img class="img-fluid" src="{{asset('user/img/tent-solid.svg')}}" alt="Icon">
+                                    <img class="img-fluid" src="{{asset('landingPage/img/tent-solid.svg')}}" alt="Icon">
                                 </div>
                                 <h6>Penyewaan Alat</h6>
                                 <span>Lebih dari 10 Alat</span>
@@ -145,7 +145,7 @@
                         <section class="cat-item d-block bg-light text-center rounded p-3" href="">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
-                                    <img class="img-fluid" src="{{asset('user/img/cart-shopping-solid.svg')}}" alt="Icon">
+                                    <img class="img-fluid" src="{{asset('landingPage/img/cart-shopping-solid.svg')}}" alt="Icon">
                                 </div>
                                 <h6>Merchandise</h6>
                                 <span>Lebih dari 100 barang</span>
@@ -164,7 +164,7 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                         <div class="about-img position-relative overflow-hidden p-5 pe-0">
-                            <img class="img-fluid w-100" src="{{('user/img/kebun-raya-bali-1.jpg')}}" alt="Taman">
+                            <img class="img-fluid w-100" src="{{('landingPage/img/kebun-raya-bali-1.jpg')}}" alt="Taman">
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -209,13 +209,13 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{asset('user/lib/wow/wow.min.js')}}"></script>
-    <script src="{{asset('user/lib/easing/easing.min.js')}}"></script>
-    <script src="{{asset('user/lib/waypoints/waypoints.min.js')}}"></script>
-    <script src="{{asset('user/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('landingPage/lib/wow/wow.min.js')}}"></script>
+    <script src="{{asset('landingPage/lib/easing/easing.min.js')}}"></script>
+    <script src="{{asset('landingPage/lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{asset('landingPage/lib/owlcarousel/owl.carousel.min.js')}}"></script>
 
     <!-- Template Javascript -->
-    <script src="{{asset('user/js/main.js')}}"></script>
+    <script src="{{asset('landingPage/js/main.js')}}"></script>
 </body>
 
 </html>
