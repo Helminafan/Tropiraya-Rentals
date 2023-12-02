@@ -25,7 +25,7 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item {{ request()->is('admin/barang*') ? 'active' : '' }}">
-      <a class="nav-link" href="{{route('admin.barang')}}">
+      <a class="nav-link" href="{{route('barang.view')}}">
         <i class="fa-solid fa-box"></i>
 
         <span>Barang</span></a

@@ -13,18 +13,19 @@
                 <h6 class=" col m-0 font-weight-bold text-primary">Tambah Barang Rentals</h6>
               </div>
               <div class="card-body">
-                <form id="validate" action="barang.html" class="row g-3">
+                <form id="validate" method="POST" action="{{route('barang.store')}}" class="row g-3" enctype="multipart/form-data">
+                  @csrf                  
                   <div class="col-md-6">
                     <label for="namaBarang" class="form-label">Nama Barang</label>
                     <input type="text" name="namaBarang" class="form-control" id="namaBarang" />
                   </div>
                   <div class="col-md-6">
                     <label for="merek" class="form-label">Merek</label>
-                    <input type="text" name="marek" class="form-control" id="merek" />
+                    <input type="text" name="merek" class="form-control" id="merek" />
                   </div>
                   <div class="col-md-6">
-                    <label for="jumlahbarang" class="form-label">Jumlah Barang</label>
-                    <input type="number" name="jumlahbarang" class="form-control" id="jumlahbarang" />
+                    <label for="jumlahBarang" class="form-label">Jumlah Barang</label>
+                    <input type="number" name="jumlahBarang" class="form-control" id="jumlahBarang" />
                   </div>
                   <div class="col-md-6">
                     <label for="fotobarang" class="form-label">Foto Barang</label>

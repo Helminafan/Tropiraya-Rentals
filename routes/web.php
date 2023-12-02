@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BarangController;
 use App\Http\Controllers\RoleController;
 use Illuminate\Support\Facades\Route;
 
@@ -37,15 +38,12 @@ Route::group(['prefix' => 'admin', 'middleware' => [
     Route::get('/dashboard', function () {
         return view('admin.dashboard');
     })->name('admin.dashboard');
-    Route::get('/barangtambah', function () {
-        return view('admin.tambahbarang');
-    })->name('admin.tambahbarang');
-    Route::get('/barangedit', function () {
-        return view('admin.editbarang');
-    })->name('admin.editbarang');
-    Route::get('/barang', function () {
-        return view('admin.barang');
-    })->name('admin.barang');
+    Route::get('/view', [BarangController::class, 'index'])->name('barang.view');
+    Route::get('/add', [BarangController::class, 'create'])->name('barang.add');
+    Route::post('/store', [BarangController::class, 'store'])->name('barang.store');
+    Route::get('/edit/{id}', [BarangController::class, 'edit'])->name('barang.edit');
+    Route::post('/update/{id}', [BarangController::class, 'update'])->name('barang.update');
+    Route::get('/delete/{id}', [BarangController::class, 'destroy'])->name('barang.delete');
 });
 
 Route::middleware([

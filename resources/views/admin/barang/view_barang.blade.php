@@ -12,7 +12,7 @@
                 <div class="row">
                     <h6 class="col m-0 font-weight-bold text-primary">DataTables Example</h6>
                     <div class="co">
-                        <a href="{{route('admin.tambahbarang')}}" class="btn btn-warning btn-icon-split"><span class="icon text-white-50">
+                        <a href="{{route('barang.add')}}" class="btn btn-warning btn-icon-split"><span class="icon text-white-50">
                                 <i class="fas fa-plus"></i>
                             </span>
                             <span class="text">Tambah Barang</span></a>
@@ -32,20 +32,22 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($data as $item)
                             <tr class="text-center">
-                                <td><img src="img/p1.png.png" width="70px" alt="" /></td>
-                                <td>Bola Sepak</td>
-                                <td>Adidas</td>
-                                <td>30</td>
+                                <td><img src="{{asset('storage/'.$item->fotobarang)}}" width="70px" alt="" /></td>
+                                <td>{{$item->namaBarang}}</td>
+                                <td>{{$item->merek}}</td>
+                                <td>{{$item->jumlahBarang}}</td>
                                 <td>
                                     <div class="row">
-                                        <a href="{{route('admin.editbarang')}}" class="col btn btn-success"
+                                        <a href="{{route('barang.edit',$item->id)}}" class="col btn btn-success"
                                             style="margin: 0 10px">Edit</a>
-                                        <a href="" class="col btn btn-danger" style="margin: 0 10px">Hapus</a>
+                                        <a href="{{route('barang.delete',$item->id)}}" class="col btn btn-danger" style="margin: 0 10px">Hapus</a>
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="text-center">
+                            @endforeach
+                            {{-- <tr class="text-center">
                                 <td><img src="img/pngwing.com (1).png" width="70px" alt="" /></td>
                                 <td>Bola Basket</td>
                                 <td>Adidas</td>
@@ -68,7 +70,7 @@
                                         <a href="" class="col btn btn-danger" style="margin: 0 10px">Hapus</a>
                                     </div>
                                 </td>
-                            </tr>
+                            </tr> --}}
                         </tbody>
                     </table>
                 </div>
