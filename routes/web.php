@@ -55,6 +55,20 @@ Route::group(['prefix' => 'admin', 'middleware' => [
     })->name('admin.riwayatpeminjaman');
 });
 
+// Route::group(['prefix' => 'user', 'middleware' => [
+//     'auth:sanctum',
+//     config('jetstream.auth_session'),
+//     'verified',
+// ]], function () {
+//     Route::get('/barang', function () {
+//         return view('user.barang');
+//     })->name('user.barang');
+// });
+
+Route::get('/barang', function () {
+         return view('user.barang');
+     })->name('user.barang');
+
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 });
