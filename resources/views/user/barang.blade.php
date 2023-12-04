@@ -15,7 +15,7 @@
                            <a href="{{route ('user.detailbarang') }}" class="option1">
                               Detail Barang
                               </a>
-                           <a href="" class="option2">
+                           <a href="{{route ('user.peminjaman') }}" class="option2">
                            Pinjam Sekarang
                            </a>
                         </div>
@@ -37,7 +37,7 @@
                            <a href="{{route ('user.detailbarang') }}" class="option1">
                               Detail Barang
                               </a>
-                           <a href="" class="option2">
+                           <a href="{{route ('user.peminjaman') }}" class="option2">
                            Pinjam Sekarang
                            </a>
                         </div>
@@ -60,7 +60,7 @@
                            <a href="{{route ('user.detailbarang') }}" class="option1">
                               Detail Barang
                               </a>
-                           <a href="" class="option2">
+                           <a href="{{route ('user.peminjaman') }}" class="option2">
                            Pinjam Sekarang
                            </a>
                         </div>
@@ -83,7 +83,7 @@
                            <a href="{{route ('user.detailbarang') }}" class="option1">
                               Detail Barang
                               </a>
-                           <a href="" class="option2">
+                           <a href="{{route ('user.peminjaman') }}" class="option2">
                            Pinjam Sekarang
                            </a>
                         </div>
@@ -106,7 +106,7 @@
                            <a href="{{route ('user.detailbarang') }}" class="option1">
                               Detail Barang
                               </a>
-                           <a href="" class="option2">
+                           <a href="{{route ('user.peminjaman') }}" class="option2">
                            Pinjam Sekarang
                            </a>
                         </div>
@@ -131,7 +131,7 @@
                            <a href="{{route ('user.detailbarang') }}" class="option1">
                               Detail Barang
                               </a>
-                           <a href="" class="option2">
+                           <a href="{{route ('user.peminjaman') }}" class="option2">
                            Pinjam Sekarang
                            </a>
                         </div>
@@ -156,7 +156,7 @@
                            <a href="{{route ('user.detailbarang') }}" class="option1">
                               Detail Barang
                               </a>
-                           <a href="" class="option2">
+                           <a href="{{route ('user.peminjaman') }}" class="option2">
                            Pinjam Sekarang
                            </a>
                         </div>
@@ -181,7 +181,7 @@
                            <a href="{{route ('user.detailbarang') }}" class="option1">
                               Detail Barang
                               </a>
-                           <a href="" class="option2">
+                           <a href="{{route ('user.peminjaman') }}" class="option2">
                            Pinjam Sekarang
                            </a>
                         </div>
@@ -206,7 +206,7 @@
                            <a href="{{route ('user.detailbarang') }}" class="option1">
                               Detail Barang
                               </a>
-                           <a href="" class="option2">
+                           <a href="{{route ('user.peminjaman') }}" class="option2">
                            Pinjam Sekarang
                            </a>
                         </div>
@@ -231,7 +231,7 @@
                            <a href="{{route ('user.detailbarang') }}" class="option1">
                               Detail Barang
                               </a>
-                           <a href="" class="option2">
+                           <a href="{{route ('user.peminjaman') }}" class="option2">
                            Pinjam Sekarang
                            </a>
                         </div>
@@ -256,7 +256,7 @@
                            <a href="{{route ('user.detailbarang') }}" class="option1">
                               Detail Barang
                               </a>
-                           <a href="" class="option2">
+                           <a href="{{route ('user.peminjaman') }}" class="option2">
                            Pinjam Sekarang
                            </a>
                         </div>
@@ -281,7 +281,7 @@
                            <a href="{{route ('user.detailbarang') }}" class="option1">
                               Detail Barang
                               </a>
-                           <a href="" class="option2">
+                           <a href="{{route ('user.peminjaman') }}" class="option2">
                            Pinjam Sekarang
                            </a>
                         </div>

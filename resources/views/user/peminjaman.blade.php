@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-sm-5 col-md-2"><img style="height: 72px; width: 95px;" src="{{asset ('user/images/p1.png.png') }}" alt=""></div>
                 <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0"><h5 style="font-weight: 600;">Bola Basket</h5></div>
-                <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0"><a type="button" class="btn" style="background-color: #00b98e; color: white;">Lakukan Pembayaran</a></div>
+                <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0"><a type="button" class="btn" style="background-color: #00b98e; color: white;">Lakukan Transaksi</a></div>
               </div>
              
             </div>
