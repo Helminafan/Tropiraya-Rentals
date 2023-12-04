@@ -12,9 +12,12 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="detailPinjam.html" class="option1">
-                              pinjam
+                           <a href="{{route ('user.detailbarang') }}" class="option1">
+                              Detail Barang
                               </a>
+                           <a href="" class="option2">
+                           Pinjam Sekarang
+                           </a>
                         </div>
                      </div>
                      <div class="img-box">
@@ -29,15 +32,18 @@
                </div>
                <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="box">
-                     <div class="option_container">
+                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">
-                           pinjam
+                           <a href="{{route ('user.detailbarang') }}" class="option1">
+                              Detail Barang
+                              </a>
+                           <a href="" class="option2">
+                           Pinjam Sekarang
                            </a>
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/pngwing.com (1).png" alt="">
+                        <img src="{{asset ('user/images/pngwing.com (1).png') }}" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
@@ -49,16 +55,18 @@
                </div>
                <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="box">
-                     <div class="option_container">
+                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">
-                           Pinjam
+                           <a href="{{route ('user.detailbarang') }}" class="option1">
+                              Detail Barang
+                              </a>
+                           <a href="" class="option2">
+                           Pinjam Sekarang
                            </a>
-                          
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/pngwing.com (2).png" alt="">
+                        <img src="{{asset ('user/images/pngwing.com (2).png') }}" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
@@ -70,16 +78,18 @@
                </div>
                <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="box">
-                     <div class="option_container">
+                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">
-                          Pinjam
+                           <a href="{{route ('user.detailbarang') }}" class="option1">
+                              Detail Barang
+                              </a>
+                           <a href="" class="option2">
+                           Pinjam Sekarang
                            </a>
-                           
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/pngwing.com (3).png" alt="">
+                        <img src="{{asset ('user/images/pngwing.com (3).png') }}" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
@@ -91,18 +101,18 @@
                </div>
                <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="box">
-                     <div class="option_container">
+                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
+                           <a href="{{route ('user.detailbarang') }}" class="option1">
+                              Detail Barang
+                              </a>
                            <a href="" class="option2">
-                           Buy Now
+                           Pinjam Sekarang
                            </a>
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/pngwing.com (4).png" alt="">
+                        <img src="{{asset ('user/images/pngwing.com (4).png') }}" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
@@ -116,18 +126,18 @@
                </div>
                <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="box">
-                     <div class="option_container">
+                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
+                           <a href="{{route ('user.detailbarang') }}" class="option1">
+                              Detail Barang
+                              </a>
                            <a href="" class="option2">
-                           Buy Now
+                           Pinjam Sekarang
                            </a>
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/pngwing.com.png" alt="">
+                        <img src="{{asset ('user/images/pngwing.com.png') }}" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
@@ -141,18 +151,18 @@
                </div>
                <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="box">
-                     <div class="option_container">
+                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
+                           <a href="{{route ('user.detailbarang') }}" class="option1">
+                              Detail Barang
+                              </a>
                            <a href="" class="option2">
-                           Buy Now
+                           Pinjam Sekarang
                            </a>
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/pngwing.com (5).png" alt="">
+                        <img src="{{asset ('user/images/pngwing.com (5).png') }}" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
@@ -166,18 +176,18 @@
                </div>
                <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="box">
-                     <div class="option_container">
+                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
+                           <a href="{{route ('user.detailbarang') }}" class="option1">
+                              Detail Barang
+                              </a>
                            <a href="" class="option2">
-                           Buy Now
+                           Pinjam Sekarang
                            </a>
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/pngwing.com (6).png" alt="">
+                        <img src="{{asset ('user/images/pngwing.com (6).png') }}" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
@@ -193,16 +203,41 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
+                           <a href="{{route ('user.detailbarang') }}" class="option1">
+                              Detail Barang
+                              </a>
                            <a href="" class="option2">
-                           Buy Now
+                           Pinjam Sekarang
                            </a>
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/pngwing.com (7).png" alt="">
+                        <img src="{{asset ('user/images/pngwing.com (7).png') }}" alt="">
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                           Men's Shirt
+                        </h5>
+                        <h6>
+                           $65
+                        </h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="box">
+                      <div class="option_container">
+                        <div class="options">
+                           <a href="{{route ('user.detailbarang') }}" class="option1">
+                              Detail Barang
+                              </a>
+                           <a href="" class="option2">
+                           Pinjam Sekarang
+                           </a>
+                        </div>
+                     </div>
+                     <div class="img-box">
+                        <img src="{{asset ('user/images/pngwing.com (8).png') }}" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
@@ -218,16 +253,16 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
+                           <a href="{{route ('user.detailbarang') }}" class="option1">
+                              Detail Barang
+                              </a>
                            <a href="" class="option2">
-                           Buy Now
+                           Pinjam Sekarang
                            </a>
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/pngwing.com (8).png" alt="">
+                        <img src="{{asset ('user/images/pngwing.com (10).png') }}" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
@@ -241,43 +276,18 @@
                </div>
                <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="box">
-                     <div class="option_container">
+                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
+                           <a href="{{route ('user.detailbarang') }}" class="option1">
+                              Detail Barang
+                              </a>
                            <a href="" class="option2">
-                           Buy Now
+                           Pinjam Sekarang
                            </a>
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/pngwing.com (10).png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Men's Shirt
-                        </h5>
-                        <h6>
-                           $65
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/pngwing.com (11).png" alt="">
+                        <img src="{{asset ('user/images/pngwing.com (11).png') }}" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>

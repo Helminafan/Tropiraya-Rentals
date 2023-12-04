@@ -66,8 +66,16 @@ Route::group(['prefix' => 'admin', 'middleware' => [
 // });
 
 Route::get('/barang', function () {
-         return view('user.barang');
-     })->name('user.barang');
+        return view('user.barang');
+    })->name('user.barang');
+
+Route::get('/detailbarang', function () {
+        return view('user.detailbarang');
+    })->name('user.detailbarang');
+
+Route::get('/peminjaman', function () {
+        return view('user.peminjaman');
+    })->name('user.peminjaman');
 
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');

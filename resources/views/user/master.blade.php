@@ -64,6 +64,7 @@
                 <div class="navbar-nav ms-auto">
                     <a href="/" class="nav-item nav-link active">Home</a>
                     <a href="{{route ('user.barang') }}" class="nav-item nav-link">Alat</a>
+                    <a href="{{route ('user.peminjaman') }}" class="nav-item nav-link">Peminjaman</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
                 <a href="{{route('login')}}" class="btn btn-primary px-3 d-none d-lg-flex" id="login">Login</a>
