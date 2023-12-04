@@ -55,31 +55,27 @@ Route::group(['prefix' => 'admin', 'middleware' => [
     })->name('admin.riwayatpeminjaman');
 });
 
-// Route::group(['prefix' => 'user', 'middleware' => [
-//     'auth:sanctum',
-//     config('jetstream.auth_session'),
-//     'verified',
-// ]], function () {
-//     Route::get('/barang', function () {
-//         return view('user.barang');
-//     })->name('user.barang');
-// });
-
-Route::get('/barang', function () {
+Route::group(['prefix' => 'user', 'middleware' => [
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+]], function () {
+    Route::get('/barang', function () {
         return view('user.barang');
     })->name('user.barang');
-
-Route::get('/detailbarang', function () {
+    Route::get('/detailbarang', function () {
         return view('user.detailbarang');
     })->name('user.detailbarang');
 
-Route::get('/peminjaman', function () {
+    Route::get('/peminjaman', function () {
         return view('user.peminjaman');
     })->name('user.peminjaman');
 
-Route::get('/admin/dashboard', function () {
-    return view('admin.dashboard');
+    Route::get('/admin/dashboard', function () {
+        return view('admin.dashboard');
+    });
 });
+
 
 Route::middleware([
     'auth:sanctum',
