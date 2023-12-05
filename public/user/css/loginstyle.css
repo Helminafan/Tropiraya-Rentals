@@ -9,13 +9,7 @@
   width: auto;
   z-index: 999;
 }
-.kartu {
-  width: 30rem;
-  padding: 70px 10px 70px 10px;
-}
-.kartu1 {
-  width: 30rem;
-}
+
 .foto {
   z-index: 1;
 }

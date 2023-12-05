@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="{{asset('landingPage/img/favicon.ico')}}" rel="icon">
+    <link href="{{ asset('landingPage/img/favicon.ico') }}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,17 +20,19 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Libraries Stylesheet -->
-    <link href="{{asset('landingPage/lib/animate/animate.min.css')}}" rel="stylesheet">
-    <link href="{{asset('landingPage/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('landingPage/lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('landingPage/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{asset('landingPage/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('landingPage/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{asset('landingPage/css/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('landingPage/css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -53,7 +55,8 @@
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
             <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
                 <div class="icon p-2 me-2">
-                    <img class="img-fluid" src="{{asset('landingPage/img/icon-deal.png')}}" alt="Icon" style="width: 30px; height: 30px;">
+                    <img class="img-fluid" src="{{ asset('landingPage/img/icon-deal.png') }}" alt="Icon"
+                        style="width: 30px; height: 30px;">
                 </div>
                 <h1 class="m-0 text-primary">TropiRaya Rentals</h1>
             </a>
@@ -62,19 +65,32 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto">
-                    <a href="/" class="nav-item nav-link active">Home</a>
-                    <a href="{{route ('user.barang') }}" class="nav-item nav-link">Alat</a>
-                    <a href="{{route ('user.peminjaman') }}" class="nav-item nav-link">Peminjaman</a>
+                    <a href="/" class="nav-item nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
+                    <a href="{{ route('user.barang') }}" class="nav-item nav-link {{ request()->is('user/barang*') ? 'active' : '' }}">Alat</a>
+                    <a href="{{ route('user.transaksi') }}" class="nav-item nav-link {{ request()->is('user/transaksi*') ? 'active' : '' }}">Peminjaman</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="{{route('login')}}" class="btn btn-primary px-3 d-none d-lg-flex" id="login">Login</a>
-                <a href="{{route('register')}}" class="btn btn-light px-3 d-none d-lg-flex" id="register">Register</a>
+                @auth
+                    <a href="" class="btn btn-primary px-3 d-none mx-2 d-lg-flex"
+                        id="login">{{ Auth::user()->name }}
+                    </a>
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button type="submit" class="btn btn-primary px-3 d-none d-lg-flex"
+                            id="login">Logout</button>
+                    </form>
+                @else
+                    <a href="{{ route('login') }}" class="btn btn-primary px-3 d-none d-lg-flex" id="login">Login</a>
+                    <a href="{{ route('register') }}" class="btn btn-light px-3 d-none d-lg-flex"
+                        id="register">Register</a>
+                @endauth
             </div>
         </nav>
     </header>
     <!-- Navbar End -->
 
     <!-- Hero Container Start -->
+    @include('sweetalert::alert')
     @yield('user')
     <!-- Hero Container End -->
 
@@ -83,19 +99,20 @@
     <!-- Footer Start -->
     <footer id="contact">
         <div class="footer-content">
-          <ul class="socials">
-            <li><a href="mailto:info@kebunraya.id"><i class="fa-regular fa-envelope"></i>info@kebunraya.id</a>
-            </li>
-            <li><a href="tel:+6281197115933"><i class="fa-solid fa-phone"></i>(+62) 811 - 9711 - 5933</a>
-            </li>
-            <li><a href="https://maps.app.goo.gl/Yxqef2AsJyx2zPBE9"><i class="fa-solid fa-location-dot"></i>Jl. Kebun Raya,Bali. 82191.</a>
-            </li>
-          </ul>
+            <ul class="socials">
+                <li><a href="mailto:info@kebunraya.id"><i class="fa-regular fa-envelope"></i>info@kebunraya.id</a>
+                </li>
+                <li><a href="tel:+6281197115933"><i class="fa-solid fa-phone"></i>(+62) 811 - 9711 - 5933</a>
+                </li>
+                <li><a href="https://maps.app.goo.gl/Yxqef2AsJyx2zPBE9"><i class="fa-solid fa-location-dot"></i>Jl.
+                        Kebun Raya,Bali. 82191.</a>
+                </li>
+            </ul>
         </div>
         <div class="footer-bottom">
-          <p>copyright &copy;2023 <span>Dicoding Indonesia</span></p>
+            <p>copyright &copy;2023 <span>Dicoding Indonesia</span></p>
         </div>
-      </footer>
+    </footer>
     <!-- Footer End -->
 
 
@@ -105,13 +122,15 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{asset('landingPage/lib/wow/wow.min.js')}}"></script>
-    <script src="{{asset('landingPage/lib/easing/easing.min.js')}}"></script>
-    <script src="{{asset('landingPage/lib/waypoints/waypoints.min.js')}}"></script>
-    <script src="{{asset('landingPage/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{ asset('landingPage/lib/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('landingPage/lib/easing/easing.min.js') }}"></script>
+    <script src="{{ asset('landingPage/lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ asset('landingPage/lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
     <!-- Template Javascript -->
-    <script src="{{asset('landingPage/js/main.js')}}"></script>
+    <script src="{{ asset('landingPage/js/main.js') }}"></script>
+    <script src="{{ asset('user/js/validasi.js') }}"></script>
+    @stack('js')
 </body>
 
 </html>

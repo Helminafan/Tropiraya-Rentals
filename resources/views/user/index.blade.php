@@ -5,7 +5,7 @@
             <div class="col-md-6 p-5 mt-lg-5">
                 <h1 class="display-5 animated fadeIn mb-4">Alat Kemah <span class="text-primary">Murah Meriah</span> Kebun Raya Bali</h1>
                 <p class="animated fadeIn mb-4 pb-2">Setiap manusia berhak atas ketenangan yang ia dambakan. Salah satu cara mendapatkan ketenangan adalah berkemah di <span class="text-primary">Kebun Raya Bali</span> #AYOKEKEBUNRAYA</p>
-                <a href="#main-content" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Get Started</a>
+                <a href="{{route('user.barang')}}" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Get Started</a>
             </div>
             <div class="col-md-6 animated fadeIn">
                 <div class="owl-carousel header-carousel">

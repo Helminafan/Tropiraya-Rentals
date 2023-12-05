@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('namaBarang');
             $table->integer('jumlahBarang');
             $table->string('merek');
+            $table->integer('hargasewa');
             $table->string('fotobarang');
             $table->text('deskripsiBarang');
             $table->timestamps();

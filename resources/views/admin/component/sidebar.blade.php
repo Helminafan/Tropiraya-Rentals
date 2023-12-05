@@ -40,17 +40,12 @@
     <li class="nav-item {{ request()->is('admin/riwayatpeminjaman') ? 'active' : '' }}">
       <a class="nav-link" href="{{route('admin.riwayatpeminjaman')}}">
         <i class="fa-solid fa-clock-rotate-left"></i>
-        <span>Riwayat Peminjam</span></a
+        <span>Costumers</span></a
       >
     </li>
 
     <!-- Nav Item - Tables -->
-    <li class="nav-item position-absolute" style="bottom: 0">
-      <a class="nav-link" href="tables.html">
-        <i class="fa-solid fa-right-from-bracket"></i>
-        <span>Log Out</span></a
-      >
-    </li>
+   
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">

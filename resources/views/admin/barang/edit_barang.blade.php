@@ -28,12 +28,16 @@
                     <input type="number" name="jumlahBarang" class="form-control" id="jumlahBarang" value="{{$editData->jumlahBarang}}"/>
                   </div>
                   <div class="col-md-6">
+                    <label for="hargasewa" class="form-label">Harga Sewa</label>
+                    <input type="type" name="hargasewa" class="form-control" id="hargasewa" value="{{$editData->hargasewa}}"/>
+                </div>
+                  <div class="col-md-6">
                     <label for="fotobarang" class="form-label">Foto Barang</label>
                     <input type="file" name="fotobarang" class="form-control-file" id="fotobarang" value="{{$editData->fotobarang}}"/>
                   </div>
                   <div class="col-md-12">
                     <label for="deskripsiBarang" class="form-label">Deskripsi</label>
-                    <textarea class="form-control" name="deskripsiBarang" id="deskripsiBarang" rows="3"value="{{$editData->deskripsiBarang}}" ></textarea>
+                    <textarea class="form-control" name="deskripsiBarang" id="deskripsiBarang" rows="3" >{{$editData->deskripsiBarang}}</textarea>
                   </div>
                   <div class="col-12 mt-4">
                     <button type="submit" class="btn btn-warning">Tambah</button>

@@ -42,7 +42,7 @@
                                     <div class="row">
                                         <a href="{{route('barang.edit',$item->id)}}" class="col btn btn-success"
                                             style="margin: 0 10px">Edit</a>
-                                        <a href="{{route('barang.delete',$item->id)}}" class="col btn btn-danger" style="margin: 0 10px">Hapus</a>
+                                        <a href="{{route('barang.delete',$item->id)}}" class="col btn btn-danger" style="margin: 0 10px" data-confirm-delete="true">Hapus</a>
                                     </div>
                                 </td>
                             </tr>

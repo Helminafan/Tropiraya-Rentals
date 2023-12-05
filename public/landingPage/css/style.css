@@ -101,13 +101,18 @@
     margin-top: 45px;
     padding: 0 3rem;
     transition: 0.5s;
-    z-index: 9999;
+    z-index: 999;
 }
-
+.error {
+    color: red;
+}
+input.error{
+    border: 1px solid red;
+}
 .nav-bar.sticky-top {
     position: sticky;
     padding: 0;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .navbar {
