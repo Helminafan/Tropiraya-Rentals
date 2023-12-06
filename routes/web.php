@@ -27,6 +27,7 @@ Route::get('/detailbarang/{id}', [BarangController::class,'userShow'])->name('us
 
 
 Route::group(['prefix' => 'admin', 'middleware' => [
+    'role:admin',
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
@@ -46,12 +47,11 @@ Route::group(['prefix' => 'admin', 'middleware' => [
     Route::post('/konfirmasipengembalian/{id}',[AdminController::class,'konfirmasiPengembalian'])->name('admin.konfirmasipengembalian');
     Route::delete('/deletepeminjam/{id}',[AdminController::class,'destroy'])->name('admin.deletepeminjam');
 
-    Route::get('/riwayatpeminjaman', function () {
-        return view('admin.riwayatpeminjaman');
-    })->name('admin.riwayatpeminjaman');
+    Route::get('/riwayatpeminjaman', [AdminController::class,'viewUser'])->name('admin.riwayatpeminjaman');
 });
 
 Route::group(['prefix' => 'user', 'middleware' => [
+    'role:user',
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',

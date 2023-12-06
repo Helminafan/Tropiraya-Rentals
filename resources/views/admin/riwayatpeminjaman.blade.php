@@ -17,46 +17,25 @@
             <thead>
               <tr>
                 <th>Nama</th>
-                <th>Barang Dipinjam</th>
-                <th>Jumlah</th>
-                <th>Prodi</th>
-                <th>Tanggal</th>
+                <th>NIK</th>
+                <th>No HP</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Alamat</th>
               </tr>
             </thead>
            
             <tbody>
+              @foreach ($data as $item)
               <tr>
-                <td>Tiger Nixon</td>
-                <td>Bola Sepak</td>
-                <td>3</td>
-                <td>Teknik Rekayasa Perangkat Lunak</td>
-                <td>04/03/2023 08:00</td>
+                <td>{{$item->name}}</td>
+                <td>{{$item->nik}}</td>
+                <td>{{$item->telp}}</td>
+                <td>{{$item->gender}}</td>
+                <td>{{$item->email}}</td>
+                <td>{{$item->alamat}}</td>
               </tr>
-              <tr>
-                <td>Garrett Winters</td>
-                <td>Bola Basket</td>
-                <td>3</td>
-                <td>Teknik Rekayasa Perangkat Lunak</td>
-                <td>04/03/2023 08:00</td>
-            
-              </tr>
-              <tr>
-                <td>Ashton Cox</td>
-                <td>Bola Voli</td>
-                <td>3</td>
-                <td>Teknik Rekayasa Perangkat Lunak</td>
-                <td>04/03/2023 08:00</td>
-                
-              </tr>
-              <tr>
-                <td>Cedric Kelly</td>
-                <td>Raket</td>
-                <td>3</td>
-                <td>Teknik Rekayasa Perangkat Lunak</td>
-                <td>04/03/2023 08:00</td>
-                
-              </tr>
-            
+              @endforeach
             </tbody>
           </table>
         </div>

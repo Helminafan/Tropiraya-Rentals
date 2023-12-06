@@ -6,6 +6,7 @@ use App\Models\Barang;
 use App\Models\Pengembalian;
 use App\Models\Sewa;
 use App\Models\Transaksi;
+use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -93,9 +94,10 @@ class AdminController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function viewUser()
     {
-        //
+        $data = User::where('id', '!=', 1)->get();
+        return view('admin.riwayatpeminjaman', compact('data'));
     }
 
     /**
