@@ -26,7 +26,7 @@
     --secondary: #858796;
     --success: #1cc88a;
     --info: #36b9cc;
-    --warning: #ff9900;
+    --warning: #00b98e;
     --danger: #e74a3b;
     --light: #f8f9fc;
     --dark: #5a5c69;
@@ -2377,18 +2377,18 @@ fieldset:disabled a.btn {
 }
 .btn-warning {
     color: #fff;
-    background-color: #f4b619;
-    border-color: #f4b619;
+    background-color: #00b98e;
+    border-color: #00b98e;
 }
 .btn-warning:hover {
     color: #fff;
-    background-color: #f4b619;
-    border-color: #f4b619;
+    background-color: #00b98e;
+    border-color: #00b98e;
 }
 .btn-warning.focus,
 .btn-warning:focus {
     color: #fff;
-    background-color: #f4b619;
+    background-color: #00b98e;
     border-color: #f4b30d;
     box-shadow: 0 0 0 0.2rem rgba(247, 203, 91, 0.5);
 }

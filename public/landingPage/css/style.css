@@ -100,11 +100,8 @@
     position: relative;
     margin-top: 45px;
     padding: 0 3rem;
-    transition: 0.5s;
-    z-index: 999;
-}
-.error {
-    color: red;
+    transition: .5s;
+    z-index: 9999;
 }
 input.error{
     border: 1px solid red;
@@ -489,252 +486,90 @@ input.error{
 
 /* Footer */
 footer {
-    position: relative;
-    background: #00b98e;
+    position: absolute;
+    background: #00B98E;
+    height: auto;
+    width: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 40px;
     color: white;
-    padding-top: 10px;
-}
-
-.footer-content {
+  }
+  
+  .footer-content {
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-}
-
-.footer-content h3 {
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 2.5rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.footer-content p {
-    max-width: 600px;
+  }
+  
+  .footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: #FFFFFF;
+  }
+  
+  .footer-content p {
+    max-width: 500px;
     margin: 10px auto;
     line-height: 24px;
     font-size: 16px;
-}
-
-.socials {
+  }
+  
+  .socials {
+    font-size: 17px;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 2rem 0;
-}
-
-.socials li {
-    margin: 0 15px;
-}
-
-.socials a {
-    display: flex;
-    align-items: center;
+    margin: 1rem 0 3rem 0;
+  }
+  
+  .socials li {
+    margin: 0 10px;
+  }
+  
+  .socials a {
+    padding: 30px;
+    /* width: 58px; */
+    height: 100px;
     text-decoration: none;
     color: white;
-    transition: color 0.4s ease;
-}
-
-.socials a i {
+  }
+  
+  .socials a i {
+    padding: 10px;
     font-size: 1.8rem;
-    margin-right: 8px;
-}
-
-.socials a:hover {
+    transition: color .4s ease;
+  }
+  
+  .socials a:hover i {
     color: #37393a;
-}
-
-.footer-bottom {
-    background: #232222;
+    transform: scale(106%);
+  }
+  
+  #contact {
+    width: 100%;
+  }
+  
+  .footer-bottom {
+    background: rgb(35, 34, 34);
+    width: 100%;
     padding: 20px 0;
     text-align: center;
-}
-
-.footer-bottom p {
-    font-size: 14px;
+  }
+  
+  .footer-bottom p {
+    font-size: 16px;
     word-spacing: 3px;
     text-transform: capitalize;
-    color: white;
-}
-
-.footer-bottom span {
+  }
+  
+  .footer-bottom span {
     text-transform: uppercase;
-    opacity: 0.6;
-    font-weight: 300;
-}
-
-.heading_container.heading_center {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
-}
-
-.product_section .heading_container {
-    margin-bottom: 20px;
-}
-
-.product_section .box {
-    position: relative;
-    margin-top: 25px;
-    padding: 25px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s;
-}
-
-.product_section .box:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.product_section .box .img-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    overflow: hidden;
-}
-
-.product_section .box .img-box img {
-    max-width: 100%;
-    max-height: 100%;
-    transition: transform 0.3s ease-in-out;
-}
-
-.product_section .box:hover .img-box img {
-    transform: scale(1.1);
-}
-
-.product_section .box .detail-box {
-    text-align: center;
-    padding: 15px 0;
-}
-
-.product_section .box .detail-box h5 {
-    font-size: 18px;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.product_section .box .detail-box h6 {
-    margin-top: 10px;
-    color: #002c3e;
-    font-weight: 600;
-}
-
-.product_section .box:hover img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.product_section .box:hover .option_container {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-.arrival_section {
-    background-color: #d4ced0;
-}
-.product_section .option_container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.6);
-    z-index: 3;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-}
-
-.product_section .options {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.product_section .options a {
-    display: inline-block;
-    padding: 8px 15px;
-    border-radius: 30px;
-    width: 165px;
-    text-align: center;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    margin: 5px 0;
-}
-
-.product_section .options .option1 {
-    background-color: #00b98e;
-    border: 1px solid #00b98e;
-    color: #ffffff;
-}
-
-.product_section .options .option1:hover {
-    background-color: transparent;
-    color: #00b98e;
-}
-
-.product_section .options .option2 {
-    background-color: #000000;
-    border: 1px solid #000000;
-    color: #ffffff;
-}
-
-.product_section .options .option2:hover {
-    background-color: transparent;
-    color: #000000;
-}
-
-.product_section .btn-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: 45px;
-}
-
-.product_section .btn-box a {
-    display: inline-block;
-    padding: 10px 40px;
-    background-color: #00b98e;
-    border: 1px solid #00b98e;
-    color: #ffffff;
-    border-radius: 0;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.product_section .btn-box a:hover {
-    background-color: transparent;
-    color: #00b98e;
-}
+    opacity: .4;
+    font-weight: 200;
+  }
