@@ -46,7 +46,7 @@
 
     <!-- Nav Item - Tables -->
     <li class="nav-item position-absolute" style="bottom: 0">
-      <a class="nav-link" href="tables.html">
+      <a class="nav-link" href="{{route('admin.logout')}}">
         <i class="fa-solid fa-right-from-bracket"></i>
         <span>Log Out</span></a
       >
