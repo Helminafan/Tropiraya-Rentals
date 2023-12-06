@@ -46,7 +46,6 @@ Route::group(['prefix' => 'admin', 'middleware' => [
     Route::post('/konfirmasipembayaran/{id}',[AdminController::class,'konfirmasiPembayaran'])->name('admin.konfirmasipembayaran');
     Route::post('/konfirmasipengembalian/{id}',[AdminController::class,'konfirmasiPengembalian'])->name('admin.konfirmasipengembalian');
     Route::delete('/deletepeminjam/{id}',[AdminController::class,'destroy'])->name('admin.deletepeminjam');
-
     Route::get('/riwayatpeminjaman', [AdminController::class,'viewUser'])->name('admin.riwayatpeminjaman');
 });
 
