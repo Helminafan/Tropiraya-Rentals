@@ -19,8 +19,8 @@
                 <th>Nama</th>
                 <th>NIK</th>
                 <th>No HP</th>
-                <th>Email</th>
                 <th>Gender</th>
+                <th>Email</th>
                 <th>Alamat</th>
               </tr>
             </thead>

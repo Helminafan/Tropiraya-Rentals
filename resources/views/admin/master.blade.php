@@ -102,6 +102,8 @@
 
     <!-- Page level custom scripts -->
     <script src="{{ asset('admin/js/demo/datatables-demo.js') }}"></script>
+    <script src="{{ asset('user/js/validasi.js') }}"></script>
+
     @stack('js')
 </body>
 

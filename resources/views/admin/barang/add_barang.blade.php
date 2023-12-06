@@ -49,3 +49,40 @@
         </div>
     </div>
 @endsection
+@push('js')
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#validate").validate({
+                rules: {
+                    namaBarang: {
+                        required: true,
+                    },
+                    merek: {
+                        required: true,
+                    },
+                    jumlahBarang: {
+                        required: true,
+                        number: true, // Menambahkan aturan kustom
+                    },
+                    hargasewa: {
+                        required: true,
+                        number: true, // Menambahkan aturan kustom
+                    },
+                    hargasewa: {
+                        required: true,
+                      
+                    },
+                    deskripsiBarang: {
+                        required: true,
+                      
+                    },
+                },
+                // messages: {
+                //     jam_pengembalian: {
+                //         greaterThanStartTime: "Waktu selesai harus setelah waktu mulai.",
+                //     },
+                // },
+            });
+        });
+    </script>
+@endpush
