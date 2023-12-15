@@ -2,7 +2,7 @@
 @section('user')
     <section class="product_section layout_padding">
         <div class="container">
-            <div class="heading_container heading_center">
+            <div class="heading_container heading_center mt-5">
                 <h2>Transaksi <span>Barang</span></h2>
             </div>
             <div class="card shadow mb-4">
