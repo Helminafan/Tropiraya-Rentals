@@ -226,6 +226,10 @@ input.error {
 }
 
 @media (max-width: 768px) {
+    .socials {
+        display: block !important;
+        padding-left: 0px !important;
+    }
     .header-carousel .owl-nav {
         left: 25px;
     }
@@ -365,6 +369,10 @@ input.error {
 }
 
 @media (max-width: 320px) {
+    .socials{
+        display: block !important;
+        padding-left: 0px !important;
+    }
     .socials li a {
         font-size: 12px;
         align-items: center;
@@ -373,6 +381,12 @@ input.error {
 }
 
 @media (max-width: 460px) {
+    
+    .socials{
+        display: block !important;
+        padding-left: 0px !important;
+    }
+
     .socials li a {
         font-size: 12px;
         align-items: center;
