@@ -59,41 +59,46 @@
     <title>Document</title>
 </head>
 
-<body class="background">
-    <section class="login position-absolute top-50 start-50 translate-middle">
-        <div class="card kartu">
-            <div class="card-body">
-                <h4>Welcome to Tropiraya Rentals</h4>
-                <p>Please sign-in to your account and start the adventure</p>
-                <x-validation-errors class="mb-4 " />
-                <form action="{{ route('login') }}" id="validate" method="post">
-                    @csrf
-                    <div class="mb-3">
-                        <label for="email" class="form-label">email</label>
-                        <input type="email" name="email" class="form-control" id="email"
-                            placeholder="name@example.com" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" name="password" class="form-control" id="password" />
-                    </div>
-                    {{-- <div class="d-flex justify-content-between">
+<body class="background ">
+    <section class="login ">
+        <div style="margin-top: 100px" class="row ">
+            <div class="col-12 col-sm-8 col-md-5 mx-auto my-auto">
+                <div class="card ">
+                    <div class="card-body">
+                        <h4>Welcome to Tropiraya Rentals</h4>
+                        <p>Please sign-in to your account and start the adventure</p>
+                        <x-validation-errors class="mb-4 " />
+                        <form action="{{ route('login') }}" id="validate" method="post">
+                            @csrf
+                            <div class="mb-3">
+                                <label for="email" class="form-label">email</label>
+                                <input type="email" name="email" class="form-control" id="email"
+                                    placeholder="name@example.com" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" name="password" class="form-control" id="password" />
+                            </div>
+                            {{-- <div class="d-flex justify-content-between">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value=""
                                 id="flexCheckIndeterminate" />
                             <label class="form-check-label" for="flexCheckIndeterminate"> Remember Me </label>
                         </div>
                     </div> --}}
-                    <button type="submit" class="btn tombol">Masuk</button>
-                </form>
-                @if (Route::has('password.request'))
-                    <a style="color: inherit" class="text-decoration-none" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
-                @endif
-                <div class="d-flex justify-content-center mt-4">
-                    <p>New on our platform?</p>
-                    <a href="{{route('register')}}">Create an account</a>
+                            <button type="submit" class="btn tombol">Masuk</button>
+                        </form>
+                        @if (Route::has('password.request'))
+                            <a style="color: inherit" class="text-decoration-none"
+                                href="{{ route('password.request') }}">
+                                {{ __('Forgot your password?') }}
+                            </a>
+                        @endif
+                        <div class="d-flex justify-content-center mt-4">
+                            <p>New on our platform?</p>
+                            <a href="{{ route('register') }}">Create an account</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,7 +115,7 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
         crossorigin="anonymous"></script>
-    <script src="{{asset('user/js/validasi.js')}}"></script>
+    <script src="{{ asset('user/js/validasi.js') }}"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

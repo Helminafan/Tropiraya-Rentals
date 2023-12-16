@@ -1,0 +1,38 @@
+.background {
+  background-color: rgba(222, 222, 222, 1);
+}
+.text-red-600{
+  color: red;
+}
+.login {
+  
+  width: auto;
+  z-index: 999;
+}
+.kartu {
+  width: 30rem;
+  padding: 70px 10px 70px 10px;
+}
+.kartu1 {
+  width: 30rem;
+}
+.foto {
+  z-index: 1;
+}
+.tombol {
+  width: 100%;
+  color: white;
+  background-color: rgba(255, 153, 0, 1);
+}
+label.error {
+  display: block;
+  color: red;
+  border: red;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+
+.bawah {
+    bottom: 0;
+}

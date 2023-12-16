@@ -72,37 +72,66 @@
 </head>
 
 <body class="background">
-    <section class="login position-absolute top-50 start-50 translate-middle">
-        <div class="card kartu1 register">
-            <div class="card-body">
-                <h4>Adventure starts here</h4>
-                <p>Make your app management easy and fun!</p>
-                <form name="validate" id="validate" action="{{ route('register') }}" method="POST">
-                    @csrf
-                    <div class="mb-3">
-                        <label for="nama" class="form-label">Nama</label>
-                        <input type="text" name="name" class="form-control" id="nama"
-                            placeholder="username" required />
+    <section style="margin-top: 40px;margin-bottom: 40px" class="login ">
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-5 m-auto">
+                <div class="card  ">
+                    <div class="card-body">
+                        <h4>Adventure starts here</h4>
+                        <p>Make your app management easy and fun!</p>
+                        <form name="validate" id="validate" action="{{ route('register') }}" method="POST">
+                            <x-validation-errors class="mb-4" />
+                            @csrf
+                            <div class="row">
+                                <div class="mb-3 col-6">
+                                    <label for="nama" class="form-label">Nama</label>
+                                    <input type="text" name="name" class="form-control" id="nama"
+                                        placeholder="username" required />
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" name="email" class="form-control" id="email"
+                                        placeholder="name@example.com" required />
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="nik" class="form-label">NIK</label>
+                                    <input type="number" name="nik" class="form-control" id="nik" required />
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="telp" class="form-label">No HP</label>
+                                    <input type="number" name="telp" class="form-control" id="telp" required />
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="gender" class="form-label">Gender</label>
+                                    <select name="gender" class="form-control" id="gender">
+                                        <option value="">Pilih Gender</option>
+                                        <option value="laki-laki">laki-laki</option>
+                                        <option value="perempuan">perempuan</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="alamat" class="form-label">Alamat</label>
+                                    <input type="text" name="alamat" class="form-control" id="alamat" required />
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="paswword" class="form-label">Password</label>
+                                    <input type="password" name="password" class="form-control" id="paswwordL"
+                                        required />
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="password_confirmation" class="form-label">Confirm Password</label>
+                                    <input type="password" name="password_confirmation" class="form-control"
+                                        id="password_confirmation" required />
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn tombol">Daftar</button>
+                        </form>
+                        <div class="d-flex justify-content-center mt-4">
+                            <p>Already have an account??</p>
+                            <a href="{{ route('login') }}">Sign in instead</a>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="number" name="email" class="form-control" id="email"
-                            placeholder="name@example.com" required />
-                    </div>
-                    <div class="mb-3">
-                        <label for="paswword" class="form-label">Password</label>
-                        <input type="password" name="password" class="form-control" id="paswword" required />
-                    </div>
-                    <div class="mb-3">
-                        <label for="password_confirmation" class="form-label">Confirm Password</label>
-                        <input type="password" name="password_confirmation" class="form-control"
-                            id="password_confirmation" required />
-                    </div>
-                    <button type="submit" class="btn tombol">Daftar</button>
-                </form>
-                <div class="d-flex justify-content-center mt-4">
-                    <p>Already have an account??</p>
-                    <a href="{{ route('login') }}">Sign in instead</a>
                 </div>
             </div>
         </div>
@@ -126,13 +155,27 @@
                     required: true,
                     email: true,
                 },
+                nik: {
+                    required: true,
+                    number: true,
+                },
+                telp: {
+                    required: true,
+                    number: true,
+                },
+                gender: {
+                    required: true,
+                },
+                alamat: {
+                    required: true,
+                },
                 password: {
                     required: true,
                     minlength: 8,
                 },
                 password_confirmation: {
                     required: true,
-                    equalTo: "#password"
+                    equalTo: "#paswwordL"
                 }
             },
             // messages: {
