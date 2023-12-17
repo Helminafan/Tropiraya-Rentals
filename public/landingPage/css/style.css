@@ -100,10 +100,10 @@
     position: relative;
     margin-top: 45px;
     padding: 0 3rem;
-    transition: .5s;
+    transition: 0.5s;
     z-index: 999;
 }
-input.error{
+input.error {
     border: 1px solid red;
 }
 .nav-bar.sticky-top {
@@ -226,6 +226,10 @@ input.error{
 }
 
 @media (max-width: 768px) {
+    .socials {
+        display: block !important;
+        padding-left: 0px !important;
+    }
     .header-carousel .owl-nav {
         left: 25px;
     }
@@ -365,6 +369,10 @@ input.error{
 }
 
 @media (max-width: 320px) {
+    .socials{
+        display: block !important;
+        padding-left: 0px !important;
+    }
     .socials li a {
         font-size: 12px;
         align-items: center;
@@ -373,6 +381,12 @@ input.error{
 }
 
 @media (max-width: 460px) {
+    
+    .socials{
+        display: block !important;
+        padding-left: 0px !important;
+    }
+
     .socials li a {
         font-size: 12px;
         align-items: center;
@@ -487,93 +501,93 @@ input.error{
 /* Footer */
 footer {
     position: absolute;
-    background: #00B98E;
+    background: #00b98e;
     height: auto;
     width: 100vh;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     padding-top: 40px;
     color: white;
-  }
-  
-  .footer-content {
+}
+
+.footer-content {
     width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-  }
-  
-  .footer-content h3 {
+}
+
+.footer-content h3 {
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
-    color: #FFFFFF;
-  }
-  
-  .footer-content p {
+    color: #ffffff;
+}
+
+.footer-content p {
     max-width: 500px;
     margin: 10px auto;
     line-height: 24px;
     font-size: 16px;
-  }
-  
-  .socials {
+}
+
+.socials {
     font-size: 17px;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
-  }
-  
-  .socials li {
+}
+
+.socials li {
     margin: 0 10px;
-  }
-  
-  .socials a {
+}
+
+.socials a {
     padding: 30px;
     /* width: 58px; */
     height: 100px;
     text-decoration: none;
     color: white;
-  }
-  
-  .socials a i {
+}
+
+.socials a i {
     padding: 10px;
     font-size: 1.8rem;
-    transition: color .4s ease;
-  }
-  
-  .socials a:hover i {
+    transition: color 0.4s ease;
+}
+
+.socials a:hover i {
     color: #37393a;
     transform: scale(106%);
-  }
-  
-  #contact {
+}
+
+#contact {
     width: 100%;
-  }
-  
-  .footer-bottom {
+}
+
+.footer-bottom {
     background: rgb(35, 34, 34);
     width: 100%;
     padding: 20px 0;
     text-align: center;
-  }
-  
-  .footer-bottom p {
+}
+
+.footer-bottom p {
     font-size: 16px;
     word-spacing: 3px;
     text-transform: capitalize;
-  }
-  
-  .footer-bottom span {
+}
+
+.footer-bottom span {
     text-transform: uppercase;
-    opacity: .4;
+    opacity: 0.4;
     font-weight: 200;
-  }
-  .heading_container.heading_center {
+}
+.heading_container.heading_center {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;

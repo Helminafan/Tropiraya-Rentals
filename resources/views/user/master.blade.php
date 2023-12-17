@@ -71,17 +71,17 @@
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
                 @auth
-                    <a href="" class="btn btn-primary px-3 d-none mx-2 d-lg-flex"
+                    <a href="" class="btn btn-primary px-3  d-block d-lg-flex"
                         id="login">{{ Auth::user()->name }}
                     </a>
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
-                        <button type="submit" class="btn btn-primary px-3 d-none d-lg-flex"
+                        <button type="submit" style="width: 100%" class="btn btn-light  px-3 d-block d-lg-flex"
                             id="login">Logout</button>
                     </form>
                 @else
-                    <a href="{{ route('login') }}" class="btn btn-primary px-3 d-none d-lg-flex" id="login">Login</a>
-                    <a href="{{ route('register') }}" class="btn btn-light px-3 d-none d-lg-flex"
+                    <a href="{{ route('login') }}" class="btn btn-primary px-3 d-block d-lg-flex" id="login">Login</a>
+                    <a href="{{ route('register') }}" class="btn btn-light px-3 d-block d-lg-flex"
                         id="register">Register</a>
                 @endauth
             </div>
