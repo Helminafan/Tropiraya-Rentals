@@ -23,6 +23,7 @@ cara mendeploy aplikasi ini yaitu:
 - pastikan anda telah menginstall Composer
 - rubah env.example menjadi env
 - rubah DB_DATABASE pada laravel sesuai dengan nama database
+  
 Setelah Itu Jalankan di terminal dengan file htdocs
 - composer update
 - php artisan migrate
