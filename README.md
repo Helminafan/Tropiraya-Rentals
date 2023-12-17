@@ -12,10 +12,10 @@ Keberadaan Tropiraya Rentals juga dapat memberikan dampak positif terhadap upaya
 
 Dalam Membuat proyek aplikas website ini yaitu
 -  Helmi Nafan Ananda [Github](https://github.com/Helminafan)
--  Ikhwanus Sholih 
--  Nadia Rizatul Riski
--  Moh.Ananta
--  Tedi Alamsyah
+-  Ikhwanus Sholih [Github](https://github.com/Ikhwan199)
+-  Nadia Rizatul Riski [Github](https://github.com/nadiarizatulriski)
+-  Moh.Ananta [Github](https://github.com/masntaa03)
+-  Tedi Alamsyah [Github](https://github.com/dyalamsyah)
 
 ## Deploy
 cara mendeploy aplikasi ini yaitu:
